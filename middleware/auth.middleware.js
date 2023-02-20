@@ -10,10 +10,10 @@ const authentication=(req,res,next)=>{
         const userID=decoded.userID
         next()
        }else{
-        res.send("Please Login First")
+        res.send({"msg":"Login first"})
        }
     }else{
-        res.send("Please Login First")
+        res.send({"msg":"login first"})
     }
 
 }
